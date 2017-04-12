@@ -730,6 +730,12 @@
     <Compile Include="Wizards\NewSRWizard_Pages\Frontends\LVMoFCoE.Designer.cs">
       <DependentUpon>LVMoFCoE.cs</DependentUpon>
     </Compile>
+    <Compile Include="Wizards\NewSRWizard_Pages\Frontends\Local_SR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewSRWizard_Pages\Frontends\Local_SR.designer.cs">
+      <DependentUpon>Local_SR.cs</DependentUpon>
+    </Compile>
     <Compile Include="Wizards\NewVMWizard\Page_CloudConfigParameters.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -2086,6 +2092,16 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\NewSRWizard_Pages\Frontends\LVMoFCoE.zh-CN.resx">
       <DependentUpon>LVMoFCoE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewSRWizard_Pages\Frontends\Local_SR.ja.resx">
+      <DependentUpon>Local_SR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewSRWizard_Pages\Frontends\Local_SR.resx">
+      <DependentUpon>Local_SR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewSRWizard_Pages\Frontends\Local_SR.zh-CN.resx">
+      <DependentUpon>Local_SR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\NewVMWizard\Page_CloudConfigParameters.ja.resx">
       <DependentUpon>Page_CloudConfigParameters.cs</DependentUpon>

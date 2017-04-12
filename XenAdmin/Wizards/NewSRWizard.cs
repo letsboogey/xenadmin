@@ -67,6 +67,7 @@ namespace XenAdmin.Wizards
         private readonly FilerDetails xenTabPageFilerDetails;
         private readonly ChooseSrTypePage xenTabPageChooseSrType;
         private readonly RBACWarningPage xenTabPageRbacWarning;
+        private readonly Local_SR xenTabPageLocalSR;
         #endregion
 
         /// <summary>
@@ -114,6 +115,7 @@ namespace XenAdmin.Wizards
             xenTabPageCslgLocation = new CslgLocation();
             xenTabPageFilerDetails = new FilerDetails();
             xenTabPageChooseSrType = new ChooseSrTypePage();
+            xenTabPageLocalSR = new Local_SR();
             xenTabPageRbacWarning = new RBACWarningPage((srToReattach == null && !disasterRecoveryTask)
                              ? Messages.RBAC_WARNING_PAGE_DESCRIPTION_SR_CREATE
                              : Messages.RBAC_WARNING_PAGE_DESCRIPTION_SR_ATTACH);
@@ -319,6 +321,8 @@ namespace XenAdmin.Wizards
                     AddPage(xenTabPageCifs);
                 else if (m_srWizardType is SrWizardType_NfsIso)
                     AddPage(xenTabPageNfsIso);
+                else if (m_srWizardType is SrWizardType_LocalExt || m_srWizardType is SrWizardType_LocalLvm)
+                    AddPage(xenTabPageLocalSR);
 
                 xenTabPageSrName.SrWizardType = m_srWizardType;
                 xenTabPageSrName.MatchingFrontends = xenTabPageChooseSrType.MatchingFrontends;
@@ -438,6 +442,10 @@ namespace XenAdmin.Wizards
                 foreach (var entry in xentabPageEqualLogic.DeviceConfigParts)
                     m_srWizardType.DeviceConfig[entry.Key] = entry.Value;
                 SetCustomDescription(m_srWizardType, xentabPageEqualLogic.SrDescription);
+            }
+            else if (senderPagetype == typeof(Local_SR))
+            {
+                //TODO
             }
         }
 

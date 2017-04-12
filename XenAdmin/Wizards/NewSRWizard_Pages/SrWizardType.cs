@@ -407,4 +407,38 @@ namespace XenAdmin.Wizards.NewSRWizard_Pages
             SrName = SrWizardHelpers.DefaultSRName(Messages.NEWSR_FCOE_DEFAULT_NAME, connection);
         }
     }
+
+    public class SrWizardType_LocalLvm : SrWizardType
+    {
+        public override bool IsEnhancedSR { get { return false; } }
+        public override string FrontendBlurb { get { return Messages.NEWSR_LOCAL_LVM_BLURB; } }
+        public override string FrontendTypeName { get { return Messages.NEWSR_LOCAL_LVM_TYPE_NAME; } }
+        public override SR.SRTypes Type { get { return SR.SRTypes.lvm; } }
+        public override string ContentType { get { return ""; } }
+        public override bool ShowIntroducePrompt { get { return false; } }
+        public override bool ShowReattachWarning { get { return true; } }
+        public override bool AllowToCreateNewSr { get; set; }
+
+        public override void ResetSrName(IXenConnection connection)
+        {
+            SrName = SrWizardHelpers.DefaultSRName(Messages.NEWSR_LOCAL_LVM_DEFAULT_NAME, connection);
+        }
+    }
+
+    public class SrWizardType_LocalExt : SrWizardType
+    {
+        public override bool IsEnhancedSR { get { return false; } }
+        public override string FrontendBlurb { get { return Messages.NEWSR_LOCAL_EXT_BLURB; } }
+        public override string FrontendTypeName { get { return Messages.NEWSR_LOCAL_EXT_TYPE_NAME; } }
+        public override SR.SRTypes Type { get { return SR.SRTypes.ext; } }
+        public override string ContentType { get { return ""; } }
+        public override bool ShowIntroducePrompt { get { return false; } }
+        public override bool ShowReattachWarning { get { return true; } }
+        public override bool AllowToCreateNewSr { get; set; }
+
+        public override void ResetSrName(IXenConnection connection)
+        {
+            SrName = SrWizardHelpers.DefaultSRName(Messages.NEWSR_LOCAL_EXT_DEFAULT_NAME, connection);
+        }
+    }
 }

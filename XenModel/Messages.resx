@@ -8236,6 +8236,24 @@ Do you wish to format the disk?</value>
   <data name="NEWSR_ISO_DESCRIPTION" xml:space="preserve">
     <value>NFS ISO Library [{0}]</value>
   </data>
+  <data name="NEWSR_LOCAL_EXT_BLURB" xml:space="preserve">
+    <value>The Blurb for local ext SR shall be here </value>
+  </data>
+  <data name="NEWSR_LOCAL_EXT_DEFAULT_NAME" xml:space="preserve">
+    <value>Local ext3 storage</value>
+  </data>
+  <data name="NEWSR_LOCAL_EXT_TYPE_NAME" xml:space="preserve">
+    <value>EXT</value>
+  </data>
+  <data name="NEWSR_LOCAL_LVM_BLURB" xml:space="preserve">
+    <value>The Blurb for local lvm SR shall be here</value>
+  </data>
+  <data name="NEWSR_LOCAL_LVM_DEFAULT_NAME" xml:space="preserve">
+    <value>Local lvm storage</value>
+  </data>
+  <data name="NEWSR_LOCAL_LVM_TYPE_NAME" xml:space="preserve">
+    <value>LVM</value>
+  </data>
   <data name="NEWSR_LOCATION" xml:space="preserve">
     <value>Location</value>
   </data>
@@ -8379,6 +8397,9 @@ VM cloning uses the snapshot and clone capabilities of the filer to provide high
   </data>
   <data name="NEWSR_PATH_NFS" xml:space="preserve">
     <value>Enter a path for your NFS storage</value>
+  </data>
+  <data name="NEWSR_SELECT_DEVICE" xml:space="preserve">
+    <value>Select the local device to create a new SR on.</value>
   </data>
   <data name="NEWSR_SELECT_LUN" xml:space="preserve">
     <value>Select the LUN to reattach or create a new SR on</value>

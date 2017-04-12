@@ -46,6 +46,9 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.radioButtonFcoe = new System.Windows.Forms.RadioButton();
             this.radioButtonCifs = new System.Windows.Forms.RadioButton();
+            this.localSRLabel = new System.Windows.Forms.Label();
+            this.radioButtonLvm = new System.Windows.Forms.RadioButton();
+            this.radioButtonExt = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -170,6 +173,9 @@
             this.tableLayoutPanel3.Controls.Add(this.labelISOlibrary, 0, 7);
             this.tableLayoutPanel3.Controls.Add(this.radioButtonCifsIso, 0, 8);
             this.tableLayoutPanel3.Controls.Add(this.radioButtonNfsIso, 0, 9);
+            this.tableLayoutPanel3.Controls.Add(this.localSRLabel, 0, 10);
+            this.tableLayoutPanel3.Controls.Add(this.radioButtonLvm, 0, 11);
+            this.tableLayoutPanel3.Controls.Add(this.radioButtonExt, 0, 12);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             // 
             // radioButtonFcoe
@@ -189,6 +195,27 @@
             this.radioButtonCifs.Name = "radioButtonCifs";
             this.radioButtonCifs.UseVisualStyleBackColor = false;
             this.radioButtonCifs.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
+            // 
+            // localSRLabel
+            // 
+            resources.ApplyResources(this.localSRLabel, "localSRLabel");
+            this.localSRLabel.Name = "localSRLabel";
+            // 
+            // radioButtonLvm
+            // 
+            resources.ApplyResources(this.radioButtonLvm, "radioButtonLvm");
+            this.radioButtonLvm.Name = "radioButtonLvm";
+            this.radioButtonLvm.TabStop = true;
+            this.radioButtonLvm.UseVisualStyleBackColor = true;
+            this.radioButtonLvm.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
+            // 
+            // radioButtonExt
+            // 
+            resources.ApplyResources(this.radioButtonExt, "radioButtonExt");
+            this.radioButtonExt.Name = "radioButtonExt";
+            this.radioButtonExt.TabStop = true;
+            this.radioButtonExt.UseVisualStyleBackColor = true;
+            this.radioButtonExt.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChanged);
             // 
             // ChooseSrTypePage
             // 
@@ -224,5 +251,8 @@
         private System.Windows.Forms.RadioButton radioButtonCifs;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.RadioButton radioButtonFcoe;
+        private System.Windows.Forms.Label localSRLabel;
+        private System.Windows.Forms.RadioButton radioButtonLvm;
+        private System.Windows.Forms.RadioButton radioButtonExt;
     }
 }

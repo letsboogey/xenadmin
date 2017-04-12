@@ -24117,6 +24117,60 @@ namespace XenAdmin {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The Blurb for local ext SR shall be here .
+        /// </summary>
+        public static string NEWSR_LOCAL_EXT_BLURB {
+            get {
+                return ResourceManager.GetString("NEWSR_LOCAL_EXT_BLURB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Local ext3 storage.
+        /// </summary>
+        public static string NEWSR_LOCAL_EXT_DEFAULT_NAME {
+            get {
+                return ResourceManager.GetString("NEWSR_LOCAL_EXT_DEFAULT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EXT.
+        /// </summary>
+        public static string NEWSR_LOCAL_EXT_TYPE_NAME {
+            get {
+                return ResourceManager.GetString("NEWSR_LOCAL_EXT_TYPE_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Blurb for local lvm SR shall be here.
+        /// </summary>
+        public static string NEWSR_LOCAL_LVM_BLURB {
+            get {
+                return ResourceManager.GetString("NEWSR_LOCAL_LVM_BLURB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Local lvm storage.
+        /// </summary>
+        public static string NEWSR_LOCAL_LVM_DEFAULT_NAME {
+            get {
+                return ResourceManager.GetString("NEWSR_LOCAL_LVM_DEFAULT_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LVM.
+        /// </summary>
+        public static string NEWSR_LOCAL_LVM_TYPE_NAME {
+            get {
+                return ResourceManager.GetString("NEWSR_LOCAL_LVM_TYPE_NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Location.
         /// </summary>
         public static string NEWSR_LOCATION {
@@ -24509,6 +24563,15 @@ namespace XenAdmin {
         public static string NEWSR_PATH_NFS {
             get {
                 return ResourceManager.GetString("NEWSR_PATH_NFS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select the local device to create a new SR on..
+        /// </summary>
+        public static string NEWSR_SELECT_DEVICE {
+            get {
+                return ResourceManager.GetString("NEWSR_SELECT_DEVICE", resourceCulture);
             }
         }
         
